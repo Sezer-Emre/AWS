@@ -1,0 +1,80 @@
+                          Pricing Model  
+
+       On Demand Instance
+
+-Aninda talep edilebilir
+-Anlasma yok
+-Kisa vadeli(bikac gunluk)
+-Fiyati sabittir.
+-Fiyatlandirma saatliktir. Kulandigin dakikaya gore saat belirlenir."5 dakika icinde 1 saat lik ucret odenir 59 dakika icin de.
+-Sinavda short-time dediginde on Demand bahsedilmekte.
+-Ilk 45 dakikada kapansada ucret odenir.
+
+        Reserved Instances (RI)
+
+-Kapasite rezervasyonu yapiyoruz.
+-Toptan alma mantigi vardir.
+-Anlasma imkani var.
+-1 ila 3 yil arasinda anlasma saglanabilir.(uzun vadeli)
+-%75 a varan iskonto imkani olabilir
+
+         Scheduled Reserved Instance
+
+-uzun vadeli aldigim instance da sadece belli saatler icinde calistirdigmz instance lar.
+Ornegin saat 08.00 ile 20.00 arasinda.
+
+          Spot Instance
+
+-Borsa mantigiyla calisir.
+-Belli bir kriter koyariz belirledigimiz fiyatin altinda kalirsa instance kaldir.
+-Atil kapasiteleri ucuza almis oluruz.
+-Belirledigimiz instance fiyati belirledigimiz ucretin usune cikarsa instance kapatir.
+-Kapasitesi kalmadiginda aws direk kapatir.
+-Veya asil kullanici instance geri istediginde kapatir.
+-Kapandiginda aninda bilgiler gider.
+-Ilk 45 dakikada kapanirsa ucret odenmez. 
+-Sinavlarda non-continuity dediginde Spot Instance dan bahsedilir.
+
+          Dedicated Host Instance
+
+-Ozel kurumlarda kullanilir genelde.
+-Sadece o kuruma ait bir serverda tutar.
+-Bilgi gizliliginden dolayi.
+-Fiziki olarak ayri bir server.
+
+                         Purpose Model
+
+-Amaca gore instancelar uretilmistir.
+ 
+       General Purpose
+
+-Balance sagliyor.
+-Kullandikca bonus veriyor.
+
+       Compute Optimized
+
+-Daha cok oyunlarda daha fazla islem gucu gerektiginde.
+
+       Memory Optimized
+
+-real-time (kisa zamanli memory ihtiyacinda)
+-Big data da daha cok ihtiyac olabilir
+
+       Storage Optimized
+
+-anlik hiz
+-Depolama
+
+       Accelerated Computing
+
+-machine learning, deep learning gibi bolumlerde ihtiyacimiz olabilir.(siri gibi)
+
+        Instance Coding
+
+r54xlarge 
+
+r=Hangi purpose
+5=Generation
+4xlarge= boyut
+
+
