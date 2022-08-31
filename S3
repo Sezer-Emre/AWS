@@ -1,0 +1,111 @@
+S3 nedir?
+
+AWS'nin en eski hizmetlerinden biri olan Amazon S3, AWS nesne tabanlı dosya depolama hizme
+ti olarak tanımlanabilir.
+
+Amazon S3, verileri nesneler olarak kovalarda depolar.
+Bir nesne, isteğe bağlı olarak bu dosyayı tanımlayan bir dosya veya meta verilerden oluşur
+
+
+Amazon S3, einer der ältesten Dienste von AWS, könnte als objektbasierter Dateispeicherdienst von AWS definiert werden.
+
+Amazon S3 speichert Daten in Buckets als Objekte.
+Ein Objekt besteht aus einer Datei oder Metadaten, die diese Datei optional identifizieren
+
+S3 Bucket nedir?
+
+Kova(Bucket), AWS'de nesneleri depolamak için kullanılan ve verileri açıklayan verilerden ve meta verilerden oluşan mantıksal bir depolama birimidir.
+Bir kova aynı zamanda bir kapsayıcı ve ayrıca S3'te yarattığımız ilk şey olarak kabul edilebilir.
+Bir kovada saklanan nesneler, metin, resim, film, video vb. herhangi bir dosya biçiminde olabilir.
+
+
+Ein Bucket ist eine logische Speichereinheit zum Speichern von Objekten in AWS, die aus Daten und Metadaten besteht, die die Daten beschreiben.
+Ein Bucket kann auch als Container betrachtet werden und ist auch das erste, was wir in S3 erstellen.
+Gespeicherte Objekte in einem Bucket können in Form beliebiger Dateien wie Text, Bild, Film, Video usw. vorliegen.
+
+Ekleme siniri nedir?
+
+Keine Begrenzung. Einem Bucket kann eine unbegrenzte Anzahl von Datenobjekten hinzugefügt werden.
+
+Limit yok. Bir kovaya sınırsız sayıda veri nesnesi eklenebilir.
+
+maks. AWS Management Console aracılığıyla yükleyebileceğiniz bir nesnenin boyutu?
+
+maks. AWS Management Console üzerinden yükleyebileceğiniz bir nesnenin boyutu 160 GB'dir.
+160 GB'den büyük bir dosya yüklemek için AWS CLI, AWS SDK veya Amazon S3 REST API'sinin kullanılması gerekir.
+
+Die max. Die Größe eines Objekts, das Sie über die AWS Management Console hochladen können, beträgt 160 GB.
+Zum Hochladen einer Datei mit mehr als 160 GB muss die AWS CLI, das AWS SDK oder die Amazon S3-REST-API verwendet werden.
+
+Nesne meta verisi nedir? Türler?
+
+Kullanıcılar, bir nesneyi yüklerken veya nesne oluşturulduktan sonra nesne meta verilerini tanımlayabilir. AWS'deki iki tür nesne meta verisi aşağıdadır:
+
+Sistem meta verileri
+Kullanıcı tanımlı meta veriler.
+
+Benutzer können Objektmetadaten entweder beim Hochladen eines Objekts oder nach dem Erstellen des Objekts definieren. Im Folgenden sind die zwei Arten von Objektmetadaten in AWS aufgeführt:
+
+System-Metadaten
+Benutzerdefinierte Metadaten.
+
+Bir nesne için depolama sınıfı Seçenekleri nelerdir?
+
+Amazon S3'teki her nesnenin kendisiyle ilişkilendirilmiş bir depolama sınıfı vardır. Amazon S3, depoladığınız nesneler için bir dizi depolama sınıfı sunar. Kullanım senaryonuza ve performans erişim gereksinimlerinize bağlı olarak bir sınıf seçersiniz. Tüm bu depolama sınıfları yüksek dayanıklılık sunar. AWS, bu farklı depolama sınıflarını farklı kullanım senaryolarına uyacak şekilde yüksek düzeyde güvenilirlikle sunar ve aktarım sırasında SSL veri şifrelemesini destekler, ancak maliyetlerine göre farklılık gösterir.
+Depolama Sınıfı Seçenekleri:
+
+Standard
+Intelligent-Tiering
+Standart-IA
+One Zone-IA
+Glacier
+Glacier Deep Archive
+Reduced Redundancy (Not recommended by AWS)
+
+Jedem Objekt in Amazon S3 ist eine Speicherklasse zugeordnet. Amazon S3 bietet eine Reihe von Speicherklassen für die von Ihnen gespeicherten Objekte. Sie wählen eine Klasse abhängig von Ihrem Anwendungsfall-Szenario und den Leistungszugriffsanforderungen. Alle diese Speicherklassen bieten eine hohe Haltbarkeit. AWS bietet diese verschiedenen Speicherklassen für unterschiedliche Nutzungsszenarien mit einem hohen Maß an Zuverlässigkeit an und unterstützt die SSL-Datenverschlüsselung während der Übertragung, sie unterscheiden sich jedoch durch ihre Kosten.
+Speicherklassenoptionen:
+
+Standard
+Intelligent-Tiering
+Standart-IA
+One Zone-IA
+Glacier
+Glacier Deep Archive
+Reduced Redundancy (Not recommended by AWS
+
+Sık ve seyrek erişilen nesneleri otomatik olarak optimize etmek için hangi depolama sınıfı kullanılabilir?
+
+Intelligent-Tiering
+
+Nesneleri arşivlemek için hangi depolama sınıfı kullanılabilir?
+
+Glacier
+Glacier Deep Archive
+
+S3 versiyonlama nedir?
+
+Sürüm oluşturma, bir nesnenin birden çok sürümünü bir kovada tutmanın bir yoludur. Bir S3 kovasına kaydedilen herhangi bir nesnenin herhangi bir sürümünü yönetmek, silmek ve geri yüklemek için kullanılır. Bir kovadaki bir nesne her değiştiğinde, nesnenin yeni bir sürümü oluşturulur ve yeni bir geçerli sürüm olarak hareket eder.
+
+Versionierung ist eine Möglichkeit, mehrere Versionen eines Objekts in einem Bucket zu halten. Es wird verwendet, um jede Version eines beliebigen Objekts zu verwalten, zu löschen und wiederherzustellen, das in einem S3-Bucket gespeichert ist. Jedes Mal, wenn sich ein Objekt in einem Bucket ändert, wird eine neue Version des Objekts erstellt und fungiert als neue aktuelle Version.
+
+Sürüm oluşturmanın üç durumu nedir?
+
+Unversioned (the default),
+Versioning-enabled,
+Versioning-suspended.
+ 
+
+S3'teki the lifecycle policy  nedir?
+
+Yaşam döngüsü ilkeleri, bir nesnenin kullanım ömrü boyunca Amazon S3'ün gerçekleştirmesini istediğiniz aşağıdaki gibi eylemleri tanımlamak için kullanılabilir:
+
+Nesneleri başka bir depolama sınıfına geçirme,
+Arşiv nesneleri,
+Belirli bir süre sonra nesneleri sil
+
+
+Lebenszyklusrichtlinien können verwendet werden, um Aktionen zu definieren, die Amazon S3 während der Lebensdauer eines Objekts ausführen soll, wie z. B.:
+
+Objekte in eine andere Speicherklasse überführen,
+Objekte archivieren,
+Löschen Sie Objekte nach einem bestimmten Zeitraum
